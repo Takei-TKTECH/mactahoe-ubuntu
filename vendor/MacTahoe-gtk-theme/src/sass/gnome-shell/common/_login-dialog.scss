@@ -323,10 +323,10 @@
 
     .login-dialog-prompt-entry {
       &:ltr, :ltr {
-        padding-right: 34px !important;
+        padding-right: 14px !important;
       }
       &:rtl, :rtl {
-        padding-left: 34px !important;
+        padding-left: 14px !important;
       }
 
       StIcon.peek-password {
@@ -336,22 +336,28 @@
   }
 
   .login-dialog-default-button-well {
-    &:ltr { margin-right: 12px; }
-    &:rtl { margin-left: 12px; }
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 0 !important;
 
     .login-dialog-button.next-button,
     .next-button {
-      background-color: transparent !important;
-      background-image: none !important;
-      border: none !important;
-      box-shadow: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      min-width: 0 !important;
+      min-height: 0 !important;
       padding: 0 !important;
       margin: 0 !important;
+      opacity: 0 !important;
 
       StIcon {
-        icon-size: 16px !important;
-        width: 16px;
-        height: 16px;
+        icon-size: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
         padding: 0 !important;
         margin: 0 !important;
       }
