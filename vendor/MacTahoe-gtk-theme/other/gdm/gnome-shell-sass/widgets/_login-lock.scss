@@ -37,17 +37,21 @@ $_gdm_dialog_width: 25em;
 
     .login-dialog-prompt-entry {
       &:ltr, :ltr {
-        padding-right: 2.5em !important;
+        padding-right: 34px !important;
       }
       &:rtl, :rtl {
-        padding-left: 2.5em !important;
+        padding-left: 34px !important;
+      }
+
+      StIcon.peek-password {
+        margin: 0 !important;
       }
     }
   }
 
   .login-dialog-default-button-well {
-    &:ltr { margin-right: 0.75em; }
-    &:rtl { margin-left: 0.75em; }
+    &:ltr { margin-right: 12px; }
+    &:rtl { margin-left: 12px; }
   }
 
   .login-dialog-prompt-entry {
@@ -279,17 +283,21 @@ $_gdm_dialog_width: 25em;
 
     .login-dialog-prompt-entry {
       &:ltr, :ltr {
-        padding-right: 2.5em !important;
+        padding-right: 34px !important;
       }
       &:rtl, :rtl {
-        padding-left: 2.5em !important;
+        padding-left: 34px !important;
+      }
+
+      StIcon.peek-password {
+        margin: 0 !important;
       }
     }
   }
 
   .login-dialog-default-button-well {
-    &:ltr { margin-right: 0.75em; }
-    &:rtl { margin-left: 0.75em; }
+    &:ltr { margin-right: 12px; }
+    &:rtl { margin-left: 12px; }
   }
 
   .login-dialog-prompt-entry {
