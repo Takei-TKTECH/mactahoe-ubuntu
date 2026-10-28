@@ -37,13 +37,15 @@ $_gdm_dialog_width: 25em;
 
     .login-dialog-prompt-entry {
       &:ltr, :ltr {
-        padding-right: 14px !important;
+        padding-right: 2px !important;
       }
       &:rtl, :rtl {
-        padding-left: 14px !important;
+        padding-left: 2px !important;
       }
 
       StIcon.peek-password {
+        padding-right: 8px !important;
+        padding-left: 4px !important;
         margin: 0 !important;
       }
     }
@@ -310,13 +312,15 @@ $_gdm_dialog_width: 25em;
 
     .login-dialog-prompt-entry {
       &:ltr, :ltr {
-        padding-right: 14px !important;
+        padding-right: 2px !important;
       }
       &:rtl, :rtl {
-        padding-left: 14px !important;
+        padding-left: 2px !important;
       }
 
       StIcon.peek-password {
+        padding-right: 8px !important;
+        padding-left: 4px !important;
         margin: 0 !important;
       }
     }
