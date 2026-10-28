@@ -32,6 +32,24 @@ $_gdm_dialog_width: 25em;
 // GDM Login Dialog
 // uses dark grey system styles
 .login-dialog {
+  .login-dialog-prompt-entry-area {
+    margin: 0.5em 0;
+
+    .login-dialog-prompt-entry {
+      &:ltr, :ltr {
+        padding-right: 2.5em !important;
+      }
+      &:rtl, :rtl {
+        padding-left: 2.5em !important;
+      }
+    }
+  }
+
+  .login-dialog-default-button-well {
+    &:ltr { margin-right: 0.75em; }
+    &:rtl { margin-left: 0.75em; }
+  }
+
   .login-dialog-prompt-entry {
     @extend %lockscreen_entry;
     &:focus { @include remove_hc_inset(); }
@@ -50,16 +68,55 @@ $_gdm_dialog_width: 25em;
   &.a11y-button,
   &.cancel-button,
   &.switch-user-button,
-  &.login-dialog-session-list-button {
+  &.login-dialog-session-list-button,
+  &.login-dialog-auth-menu-button {
     @extend .icon-button;
     @extend %lockscreen_button;
-    padding: to_em(16px);
+    padding: to_em(14px);
     border-radius: 1000px;
     &:focus { @include remove_hc_inset(); }
+
+    StIcon {
+      icon-size: 16px !important;
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &.cancel-button {
     padding: $base_padding * 1.5;
+
+    StIcon {
+      icon-size: 16px !important;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &.next-button {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 16px;
+    min-width: 16px;
+
+    StIcon {
+      icon-size: 16px !important;
+      width: 16px;
+      height: 16px;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    &:hover, &:focus, &:active {
+      background-color: transparent !important;
+      background-image: none !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
   }
 }
 
@@ -216,6 +273,24 @@ $_gdm_dialog_width: 25em;
 // a.k.a. the lockscreen, uses transparent styles
 .unlock-dialog {
   background-color: transparent;
+
+  .login-dialog-prompt-entry-area {
+    margin: 0.5em 0;
+
+    .login-dialog-prompt-entry {
+      &:ltr, :ltr {
+        padding-right: 2.5em !important;
+      }
+      &:rtl, :rtl {
+        padding-left: 2.5em !important;
+      }
+    }
+  }
+
+  .login-dialog-default-button-well {
+    &:ltr { margin-right: 0.75em; }
+    &:rtl { margin-left: 0.75em; }
+  }
 
   .login-dialog-prompt-entry {
     @extend %lockscreen_entry;

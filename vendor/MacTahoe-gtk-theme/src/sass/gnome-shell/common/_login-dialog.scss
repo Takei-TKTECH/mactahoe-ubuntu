@@ -318,14 +318,58 @@
     }
   }
 
+  .login-dialog-prompt-entry-area {
+    margin: 0.5em 0;
+
+    .login-dialog-prompt-entry {
+      &:ltr, :ltr {
+        padding-right: 2.5em !important;
+      }
+      &:rtl, :rtl {
+        padding-left: 2.5em !important;
+      }
+    }
+  }
+
+  .login-dialog-default-button-well {
+    &:ltr { margin-right: 0.75em; }
+    &:rtl { margin-left: 0.75em; }
+
+    .login-dialog-button.next-button,
+    .next-button {
+      background-color: transparent !important;
+      background-image: none !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+
+      StIcon {
+        icon-size: 16px !important;
+        width: 16px;
+        height: 16px;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    }
+  }
+
   .cancel-button,
   .switch-user-button,
-  .login-dialog-session-list-button {
+  .login-dialog-session-list-button,
+  .login-dialog-auth-menu-button,
+  .a11y-button {
     padding: 0 !important;
     border-radius: $circular_radius;
     border: none;
     background-color: $fill_color;
     color: $light_fg_color;
+
+    StIcon {
+      icon-size: 16px !important;
+      width: 16px;
+      height: 16px;
+    }
 
     &:hover, &:focus { background-color: $divider_color; }
     &:active { background-color: $track_color; }
